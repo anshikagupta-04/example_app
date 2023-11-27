@@ -15,7 +15,7 @@ class Song
     /**
      * @var string The genre of the song.
      */
-    private $genre;
+    private $time;
 
     /**
      * @var int The tempo of the song in beats per minute.
@@ -30,11 +30,11 @@ class Song
      * @param string $genre  The genre of the song.
      * @param int    $tempo  The tempo of the song in beats per minute.
      */
-    public function __construct($title, $artist, $genre, $tempo)
+    public function __construct($title, $artist, $time, $tempo)
     {
         $this->title = $title;
         $this->artist = $artist;
-        $this->genre = $genre;
+        $this->time = $time;
         $this->tempo = $tempo;
     }
 
@@ -83,9 +83,9 @@ class Song
      *
      * @return string
      */
-    public function getGenre()
+    public function getTime()
     {
-        return $this->genre;
+        return $this->time;
     }
 
     /**
@@ -93,9 +93,9 @@ class Song
      *
      * @param string $genre
      */
-    public function setGenre($genre)
+    public function setTime($time)
     {
-        $this->genre = $genre;
+        $this->time = $time;
     }
 
     /**
@@ -123,21 +123,21 @@ class Song
 $song = new Song("Bohemian Rhapsody", "Queen", "Rock", 72);
 
 // Getters
-echo "Title: " . $song->getTitle() . PHP_EOL;
-echo "Artist: " . $song->getArtist() . PHP_EOL;
-echo "Genre: " . $song->getGenre() . PHP_EOL;
-echo "Tempo: " . $song->getTempo() . " BPM" . PHP_EOL;
+// echo "Title: " . $song->getTitle() . PHP_EOL;
+// echo "Artist: " . $song->getArtist() . PHP_EOL;
+// echo "Time: " . $song->getTime() . PHP_EOL;
+// echo "Tempo: " . $song->getTempo() . " BPM" . PHP_EOL;
 
 // Setters
 $song->setTitle("Stairway to Heaven");
 $song->setArtist("Led Zeppelin");
-$song->setGenre("Classic Rock");
+$song->setTime("Classic Rock");
 $song->setTempo(84);
 
 // Updated values
-echo "Updated Title: " . $song->getTitle() . PHP_EOL;
-echo "Updated Artist: " . $song->getArtist() . PHP_EOL;
-echo "Updated Genre: " . $song->getGenre() . PHP_EOL;
-echo "Updated Tempo: " . $song->getTempo() . " BPM" . PHP_EOL;
+// echo "Updated Title: " . $song->getTitle() . PHP_EOL;
+// echo "Updated Artist: " . $song->getArtist() . PHP_EOL;
+// echo "Updated Time: " . $song->getTime() . PHP_EOL;
+// echo "Updated Tempo: " . $song->getTempo() . " BPM" . PHP_EOL;
 ?>
 
