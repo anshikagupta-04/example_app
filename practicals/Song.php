@@ -1,5 +1,5 @@
 <?php
-
+namespace Practicals;
 class Song
 {
     /**
