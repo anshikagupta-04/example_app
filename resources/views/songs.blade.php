@@ -11,10 +11,10 @@
 </tr>
 @foreach ($songs as $song)
 <tr>
-<td>{{ $song->getTitle() }}</td>
-<td>{{ $song->getArtist() }}</td>
-<td>{{ $song->getTime() }}</td>
-<td>{{ $song->getTempo() }}</td>
+<td>{{ $song->title }}</td>
+<td>{{ $song->artist }}</td>
+<td>{{ $song->time }}</td>
+<td>{{ $song->tempo }}</td>
 </tr>
 @endforeach
 </table>

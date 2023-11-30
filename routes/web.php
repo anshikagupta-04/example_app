@@ -1,7 +1,8 @@
 <?php
 
+use App\Models\Song;
 use Illuminate\Support\Facades\Route;
-use Practicals\Song;
+// use Practicals\Song;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +36,8 @@ Route::get('/veggies/{veggieNames}', function (string $veggieNames) {
 //     $song->setTitle('With You');
 //     return view('songs', [ 'song' => $song ]);
 // });
-Route::get('/songs', function () {
+
+Route::get('/songs_static', function () {
     $song1 = new Song("Stay with Me","CHANYEOL","3:12",125);
     $song1->setTitle("Stay with Me");
     $song1->setArtist("CHANYEOL");
@@ -56,3 +58,6 @@ Route::get('/songs', function () {
   
     return view('songs', [ 'songs' => [ $song1, $song2, $song3 ] ]); 
   });
+Route::get('/songs', function () {
+    return view('songs', [ 'songs' => Song::all() ] );
+});
