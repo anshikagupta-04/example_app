@@ -17,15 +17,15 @@ class SongSeeder extends Seeder
         Song::create([
             'artist' => 'CHANYEOL',
             'title' => 'Stay with Me',
-            // 'time' => '3:12',
-            // 'tempo' => 125,
+            'time' => '3:12',
+            'tempo' => 125,
         ]);
 
         Song::create([
             'artist' => 'Taylor Swift',
             'title' => 'Lover',
-            // 'time' => '3:41',
-            // 'tempo' => 69,
+            'time' => '3:41',
+            'tempo' => 69,
         ]);
     }
 }
