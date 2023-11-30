@@ -59,6 +59,11 @@ Route::get('/songs_static', function () {
     // return view('songs', [ 'songs' => [ $song1, $song2, $song3 ] ]); 
     return view('songs_static');
   });
+
+  Route::get('/songs_spotify', function () {
+    return view('songs_spotify');
+});
+
 Route::get('/songs', function () {
     return view('songs', [ 'songs' => Song::all() ] );
 });
