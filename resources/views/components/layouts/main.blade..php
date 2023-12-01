@@ -26,7 +26,8 @@
     </div>
 
     <main>
-      <div class="playlist-info">
+      @yield('content')
+      <!-- <div class="playlist-info">
         <h2>Now Playing</h2>
         <p>Playlist Name: K-Drama OST</p>
       </div>
@@ -66,7 +67,7 @@
           <div>Crush</div>
           <div>3:56</div>
         </div>
-      </div>
+      </div> -->
     </main>
 
     <div class="status-bar">

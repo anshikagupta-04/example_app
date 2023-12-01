@@ -148,7 +148,7 @@
     </div>
 
     <footer>
-      <p>&copy; 2023 Prathamesh SongList | <a href="#">About</a> | <a href="#">Terms</a></p>
+      <p>&copy; 2023 Anshika SongList | <a href="#">About</a> | <a href="#">Terms</a></p>
     </footer>
   </div>
 </body>
